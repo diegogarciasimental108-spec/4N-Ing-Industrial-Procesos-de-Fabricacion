@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f172a;
+color:white;
+text-align:center;
+font-family:sans-serif;
+}
+
+/* MENU */
+
+.menu{
+width:90%;
+max-width:1000px;
+display:flex;
+justify-content:space-around;
+margin:30px auto;
+background:rgba(0,0,0,0.7);
+border-radius:25px;
+border:2px solid #8B5CF6;
+padding:15px;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-size:28px;
+font-family:'VT323', monospace;
+padding:10px 25px;
+border-radius:10px;
+}
+
+.menu a:hover{
+background:#8B5CF6;
+}
+@media (max-width:600px){
+
+.menu{
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.menu a{
+    width:45%;
+    font-size:22px;
+}
+
+}
+
+
+/* TITULO */
+
+.titulo{
+font-family:'VT323', monospace;
+font-size:60px;
+margin-top:20px;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+background:#1e293b;
+width:400px;
+margin:40px auto;
+padding:30px;
+border-radius:15px;
+}
+
+/* INPUTS */
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+
+/* RELOJ */
+
+.reloj{
+font-size:80px;
+margin:20px 0;
+font-family:'VT323', monospace;
+}
+
+/* BOTONES */
+
+button{
+padding:12px 20px;
+margin:5px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+#iniciar{
+background:#22c55e;
+color:white;
+}
+
+#pausar{
+background:#f59e0b;
+color:white;
+}
+
+#continuar{
+background:#3b82f6;
+color:white;
+}
+
+#terminar{
+background:#ef4444;
+color:white;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+#estado{
+margin-top:20px;
+font-size:20px;
+color:#8B5CF6;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-size:14px;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
+
+.botonvolver{
+display:block;
+width:200px;
+margin:30px auto;
+padding:12px;
+text-align:center;
+background:#F08DED;
+color: black;
+font-family:'VT323', monospace;
+font-size:22px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+.botonvolver:hover{
+background:#EDB4EB;
+transform:scale(1.05);
+box-shadow:0 0 10px #FAD7F8;
+
+}
+

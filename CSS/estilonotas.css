@@ -1,0 +1,175 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f172a;
+color:white;
+font-family:sans-serif;
+text-align:center;
+}
+
+/* MENU */
+
+.menu{
+width:90%;
+max-width:1000px;
+display:flex;
+justify-content:space-around;
+margin:30px auto;
+background:rgba(0,0,0,0.7);
+border-radius:25px;
+border:2px solid #8B5CF6;
+padding:15px;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-size:28px;
+font-family:'VT323', monospace;
+padding:10px 25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.menu a:hover{
+background:#8B5CF6;
+transform:scale(1.1);
+}
+@media (max-width:600px){
+
+.menu{
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.menu a{
+    width:45%;
+    font-size:22px;
+}
+
+}
+
+
+
+/* TITULO */
+
+.titulo{
+font-family:'VT323', monospace;
+font-size:50px;
+margin:20px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+width:400px;
+margin:auto;
+transition:0.3s;
+}
+
+/* BORDE ROSA CUANDO EDITAS */
+
+.formulario.editando{
+border:3px solid #ff4fd8;
+box-shadow:0 0 15px #ff4fd8;
+}
+
+/* INPUTS */
+
+input, textarea, select{
+
+width:100%;
+margin:10px 0;
+padding:10px;
+border-radius:8px;
+border:none;
+
+}
+
+textarea{
+height:120px;
+}
+
+/* BOTON */
+
+button{
+background:#8B5CF6;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+button:hover{
+background:#6d28d9;
+}
+
+/* NOTAS */
+
+#listaNotas{
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nota{
+
+background:white;
+color:black;
+width:250px;
+padding:20px;
+margin:10px;
+border-radius:10px;
+
+}
+
+.nota h3{
+margin-bottom:10px;
+}
+
+.nota button{
+margin-top:10px;
+background:#ff4fd8;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-size:14px;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
+
+.botonvolver{
+display:block;
+width:200px;
+margin:30px auto;
+padding:12px;
+text-align:center;
+background:#F08DED;
+color: black;
+font-family:'VT323', monospace;
+font-size:22px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+.botonvolver:hover{
+background:#EDB4EB;
+transform:scale(1.05);
+box-shadow:0 0 10px #FAD7F8;
+
+}
